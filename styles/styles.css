@@ -40,7 +40,6 @@ body {
     line-height: 27px;
     color: var(--schrift-color);
     margin-top: 36px;
-    /* width: 60%; */
 }
 
 .section1-button {
@@ -53,25 +52,35 @@ body {
     line-height: 27px;
     width: 286px;
     color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section1-button:hover {
+    background-color: var(--button-hover-color);
 }
 
 .section-1-images {
     position: relative;
     width: 550px;
+    /* строго как в макете */
+    height: 430px;
+    /* немного больше чтобы уместить обе картинки */
 }
 
-.section-1-images>.img-big {
+
+.img-big {
     width: 428px;
     height: 394px;
     display: block;
 }
 
-.section-1-images>.img-small {
+
+.img-small {
     position: absolute;
     width: 306px;
     height: 290px;
     bottom: -74px;
     left: -92px;
     z-index: 2;
-
 }
