@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лендинг</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/variables.css">
@@ -13,53 +14,110 @@
 
 <body>
 
-    <section id="hero" class="section section-1">
-        <header class="header">
-            <div class="header-content">
-                <h2 class="logo">LOGO</h2>
-                <h1>Hello, I am a photographer</h1>
-                <p>Description here Lorem ipsum dolor sit amet, oluta?</p>
-                <button class="section1-button">Button</button>
+    <!-- SECTION 1 (Hero) -->
+    <section id="hero" class="section-1 py-custom">
+        <div class="container">
+            <div class="row align-items-start">
+
+                <!-- LEFT -->
+                <div class="col-lg-6 d-flex flex-column">
+                    <h2 class="logo mb-0">LOGO</h2>
+
+                    <h1 class="hero-title mt-5">
+                        Hello, I am a photographer
+                    </h1>
+
+                    <p class="hero-description mt-4">
+                        Description here Lorem ipsum dolor sit amet, oluta?
+                    </p>
+
+                    <button class="section1-button mt-4">Button</button>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col-lg-6 d-flex justify-content-center position-relative">
+                    <div class="hero-images-wrapper position-relative">
+                        <img src="/images/example-image.webp" class="img-big" alt="">
+                        <img src="/images/example-image.webp" class="img-small position-absolute" alt="">
+                    </div>
+                </div>
+
             </div>
-            <div class="section-1-images ">
-                <img src="/images/example-image.webp" class="img-big " alt="Пример изображения">
-                <img src="/images/example-image.webp" class="img-small" alt="Пример изображения">
-            </div>
-        </header>
+        </div>
     </section>
 
-    <section id="promotion" class="section section-2">
-        <div class="section-2-image">
-            <img src="/images/example-image.webp" alt="Пример изображения">
-        </div>
-        <div class="section-2-contents">
-            <div class="section-2-paragraphs">
-                <p class="section-2-title">Weihnachts-Fotoshooting-Aktion</p>
-                <p class="section-2-text">Familienbilder, die sich ideal als ein Weihnachtsgeschenk eignen.</p>
-                <p class="section-2-text">Nutze die Chance und halte eure Familienmomente in liebevollen Bildern fest – 30 Minuten
-                    Familien-Fotoshooting für nur 39 € statt 89 €!</p>
-                <p class="section-2-text">Diese Aktion gilt nur bis zum 06.12.25.</p>
+
+    <!-- SECTION 2 (Promotion) -->
+    <section id="promotion" class="section-2 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT IMAGE -->
+                <div class="col-lg-6 d-flex justify-content-start">
+                    <img src="/images/example-image.webp" class="section-2-image" alt="">
+                </div>
+
+                <!-- RIGHT CONTENT -->
+                <div class="col-lg-6">
+                    <div class="section-2-paragraphs">
+                        <p class="section-2-title">Weihnachts-Fotoshooting-Aktion</p>
+                        <p class="section-2-text">Familienbilder, die sich ideal als ein Weihnachtsgeschenk eignen.</p>
+                        <p class="section-2-text">
+                            Nutze die Chance und halte eure Familienmomente in liebevollen Bildern fest – 30 Minuten
+                            Familien-Fotoshooting für nur 39 € statt 89 €!
+                        </p>
+                        <p class="section-2-text">Diese Aktion gilt nur bis zum 06.12.25.</p>
+                    </div>
+
+                    <hr class="section-2-line">
+
+                    <button class="section-2-button">
+                        Hier geht’s zur Fotoshooting-Aktion
+                        <img src="/images/button-line.svg" class="arrow-img" alt="">
+                    </button>
+                </div>
             </div>
-            <hr>
-            <button class="section-2-button">Hier geht’s zur Fotoshooting-Aktion <span><img src="/images/button-line.svg" alt="button line"></span></button>
         </div>
     </section>
 
-    <section id="offers" class="section section-3">
-        <div class="section-3-contents">
-            <div class="section-3-paragraphs">
-                <p class="section-3-title">Für die schönsten Erinnerungen mit deinen Liebsten!</p>
-                <p class="section-3-text">Familien-Fotoshooting – liebevoll & natürlich</p>
-                <p class="section-3-text">Ich nehme mir viel Zeit und schaffe eine entspannte Atmosphäre, in der echte, authentische Momente mit eurer Familie entstehen dürfen – voller Nähe, Herzlichkeit und echter Emotionen.</p>
+
+    <!-- SECTION 3 (Offers) -->
+    <section id="offers" class="section-3 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-6 d-flex flex-column">
+                    <div class="section-3-paragraphs">
+                        <p class="section-3-title">Für die schönsten Erinnerungen mit deinen Liebsten!</p>
+                        <p class="section-3-text">Familien-Fotoshooting – liebevoll & natürlich</p>
+                        <p class="section-3-text">
+                            Ich nehme mir viel Zeit und schaffe eine entspannte Atmosphäre, in der echte,
+                            authentische Momente mit eurer Familie entstehen dürfen – voller Nähe,
+                            Herzlichkeit und echter Emotionen.
+                        </p>
+                    </div>
+
+                    <hr class="section-3-line">
+
+                    <button class="section-3-button">
+                        Shootingplatz sichern
+                        <img src="/images/button-line.svg" class="arrow-img" alt="">
+                    </button>
+                </div>
+
+                <!-- RIGHT IMAGE BLOCK -->
+                <div class="col-lg-6">
+                    <div class="section-3-imagebox">
+                        <img src="/images/example-image.webp" class="section-3-image" alt="">
+                        <span>– für dich, für dein Kind, für immer –</span>
+                    </div>
+                </div>
+
             </div>
-            <hr>
-            <button class="section-3-button">Shootingplatz sichern <span><img src="/images/button-line.svg" alt="button line"></span></button>
-        </div>
-        <div class="section-3-image">
-            <img src="/images/example-image.webp" alt="Пример изображения">
-            <span>– für dich, für dein Kind, für immer –</span>
         </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
